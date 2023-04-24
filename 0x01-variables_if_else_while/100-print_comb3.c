@@ -6,32 +6,25 @@
  */
 int main(void)
 {
-int l = 0;
-int w = 0;
+int l;
+int w;
 
-while (l <= 9)
+for (l = 48; l <= 56; l++)
 {
-while (j <= 9)
+for (w = 49; w <= 57; w++)
 {
-if (!(l > w) || l == w)
+if (w > l)
 {
-
 putchar(l);
 putchar(w);
-if (l == 8 && w == 9)
-{
-putchar('\n');
-}
-else
+if (l !=56 || w !=57)
 {
 putchar(',');
 putchar(' ');
 }
 }
-w++;
 }
-w = 0;
-l++;
 }
+putchar('\n');
 return (0);
 }
