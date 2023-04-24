@@ -17,7 +17,7 @@ if (w > l)
 {
 putchar(l);
 putchar(w);
-if (l !=56 || w !=57)
+if (l != 56 || w != 57)
 {
 putchar(',');
 putchar(' ');
@@ -27,4 +27,4 @@ putchar(' ');
 }
 putchar('\n');
 return (0);
-}
+g
