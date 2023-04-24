@@ -11,7 +11,7 @@ int l = 122;
 while (l >= 97)
 {
 putchar(l);
-l++;
+l--;
 }
 putchar('\n');
 return (0);
