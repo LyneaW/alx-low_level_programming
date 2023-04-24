@@ -8,19 +8,24 @@ int main(void)
 {
 int l;
 int w;
+int t;
 
-for (l = 48; l <= 56; l++)
+for (l = 48; l < 58; l++)
 {
-for (w = 49; w <= 57; w++)
+for (w = 49; w < 58; w++)
 {
-if (w > l)
+for (t = 50; t < 58; t++)
+{
+if (t > w && w > l)
 {
 putchar(l);
 putchar(w);
-if (l != 56 || w != 57)
+putchar(t);
+if (l != 55 || w != 56)
 {
 putchar(',');
 putchar(' ');
+}
 }
 }
 }
