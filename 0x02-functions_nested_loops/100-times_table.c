@@ -19,13 +19,9 @@ _putchar(',');
 _putchar(' ');
 t = l * w;
 if (t <= 99)
-{
 _putchar(' ');
-}
 if (t <= 9)
-{
 _putchar(' ');
-}
 if (t >= 100)
 {
 _putchar((t / 100) + '0');
@@ -34,10 +30,10 @@ _putchar(((t / 10) % 10) + '0');
 else if (t <= 99 && t >= 10)
 {
 _putchar((t / 10) + '0');
+}
 _putchar((t % 10) + '0');
 }
 _putchar('\n');
-}
 }
 }
 }
