@@ -1,24 +1,22 @@
 #include <stdio.h>
 /**
- * main -  prints the sum of the even-valued terms
+ * main -  prints the sum of the even Fibonacci numbers
  *
- * Return: Always 0 (Success)
+ * Return: Nothing!
  */
 int main(void)
 {
-int x = 0;
-long y = 1;
-long z = 2;
-long sum = z;
+int i = 0;
+long j = 1, k = 2, sum = k;
 
-while (z + y < 4000000)
+while (k + j < 4000000)
 {
-z += y;
-if (z % 2 == 0)
-sum += z;
-y = z - y;
-++z;
+k += j;
+if (k % 2 == 0)
+sum += k;
+j = k - j;
+++i;
 }
-printf("%ld\n", sum);
+printf("%ld\n", sum)
 return (0);
 }
