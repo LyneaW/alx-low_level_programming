@@ -12,5 +12,5 @@ for (l = 97; l <= 122; l++)
 {
 _putchar(l);
 }
-putchar('\n');
+_putchar('\n');
 }
