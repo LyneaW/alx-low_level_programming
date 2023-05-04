@@ -1,30 +1,34 @@
 #include "main.h"
 /**
  * cap_string - capitalizes all words of a string
- * @k: string pointer
- * Return: pointer to k
+ * @l: string to be capitalised
+ * Return: string pointer
  */
+char *cap_string(char *l)
+{
+int index = 0;
 
-char *cap_string(char *k)
+while (l[index])
 {
-int string_count;
+while (!(l[index] >= 'a' && l[index] <= 'z'))
+index++;
 
-/* scan through string */
-string_count = 0;
-while (k[string_count] != '\0')
-{/* if next character after count is a char, capitalise it */
-if (k[0] >= 97 && k[0] <= 122)
-{
-k[0] = k[0] - 32;
+if (l[index - 1] == ' ' ||
+l[index - 1] == '\t' ||
+l[index - 1] == '\n' ||
+l[index - 1] == ',' ||
+l[index - 1] == ';' ||
+l[index - 1] == '.' ||
+l[index - 1] == '!' ||
+l[index - 1] == '?' ||
+l[index - 1] == '"' ||
+l[index - 1] == '(' ||
+l[index - 1] == ')' ||
+l[index - 1] == '{' ||
+l[index - 1] == '}' ||
+index == 0)
+l[index] -= 32;
+index++;
 }
-if (k[string_count] == ' ' || k[string_count] == '\t' || k[string_count] == '\n' || k[string_count] == ',' || k[string_count] == ';' || k[string_count] == '.' || k[string_count] == '.' || k[string_count] == '!' || k[string_count] == '?' || k[string_count] == '"' || k[string_count] == '(' || k[string_count] == ')' || k[string_count] == '{' || k[string_count] == '}')
-{
-if (k[string_count + 1] >= 97 && k[string_count + 1] <= 122)
-{
-k[string_count + 1] = k[string_count + 1] - 32;
-}
-}
-string_count++;
-}
-return (k);
+return (l);
 }
