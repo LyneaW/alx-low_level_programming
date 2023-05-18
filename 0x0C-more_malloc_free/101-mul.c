@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * is_digit - checks if  string contains a non-digit char
- * @s: string to evaluate
+ * is_digit - checks if a string contains a non-digit char
+ * @s: string to be evaluated
  *
  * Return: 0 if a non-digit is found, 1 otherwise
  */
@@ -47,7 +47,7 @@ exit(98);
 }
 
 /**
- * main - multiplies two positive numbers 
+ * main - multiplies two positive numbers
  * @argc: number of arguments
  * @argv: array of arguments
  *
